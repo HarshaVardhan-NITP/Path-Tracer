@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div><br>
+</div>
+<div class="box">
+  <div class="inner">
+    <span class="dabba">Path Finder</span>
+  </div>
+  <div class="inner">
+    <span class="dabba">Welcome to</span>
+  </div>
+</div>
+<br>
+  <div class="row">
+    <div class="column2">
+      <canvas id='container' width='960' height='600' ></canvas><br\><br>
+      
+	    <p id="outcome"></p>
+	    <p id="demo"></p>
+    </div>
+  <div class="column">
+    <p class="text1">Source</p>
+    <h class="head1">Row</h><br>
+     <input type="text" id="source_x"><br><br>
+    <h class="head1">Column</h><br>
+    <input type="text" id="source_y"><br> <br> 
+    <p class="text1">Destination</p>
+    <h class="head1">Row</h><br>
+    <input type="text" id="dest_x"><br><br>
+    <h class="head1">Column</h><br>
+    <input type="text" id="dest_y"><br><br><br>
+    <button id="input_" onclick="values_of_src_dest()">Submit Coordinates</button><br\><br><br>
+    <button onclick="solveMaze()">Solve Maze</button>
+	  <button onclick='window.location.reload();'>Reset</button>
+  </div>
+  
+</div>
+<script src='pathtracer.js'></script>
+
+</body>
+</html>

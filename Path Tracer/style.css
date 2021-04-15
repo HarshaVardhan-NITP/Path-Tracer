@@ -1,0 +1,182 @@
+html {
+  height:100%;
+}
+.box {
+	display: flex;
+}
+
+.box .inner {
+	width: 700px;
+	height: 140px;
+	line-height: 140px;
+	font-size: 5em;
+  font-family: sans-serif;
+	font-weight: bold;
+  white-space: nowrap;
+	overflow: hidden;
+}
+
+.box .inner:first-child {
+  color: blue;
+  vertical-align: middle;
+	transform-origin: right;
+	transform: perspective(100px) rotateY(-10deg);
+}
+
+.box .inner:last-child {
+  
+	color: red;
+	transform-origin: left;
+	transform: perspective(100px) rotateY(10deg);
+}
+
+.box .inner span {
+	position: absolute;
+	animation: marquee 5s linear infinite;
+}
+
+.box .inner:first-child span {
+	animation-delay: 2.5s;
+	left: -100%;
+}
+
+@keyframes marquee {
+	from {
+		left: 100%;
+	}
+
+	to {
+		left: -100%;
+	}
+}
+.dabba{
+  font-family: "Georgia", "Courier New", monospace;
+}
+
+body {
+  margin:0;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+  body{
+    background-size: 100% 100%;
+    font-family: 'Raleway', sans-serif;
+    
+  }
+  img{
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 50px;
+    width:50px;
+}
+  button{
+    font-family: 'Raleway', sans-serif;
+  }
+
+  *{
+  box-sizing: border-box;
+  }
+
+  input[type=text] {
+    border: 2px solid rgb(168, 168, 168);
+    border-radius: 4px;
+    transition: 0.5s;
+    outline: none;
+  }
+  input[type=text]:focus {
+    border: 3px solid rgb(27, 27, 27);
+    background-color: rgb(226, 226, 226);
+  }
+
+.column {
+  float: left;
+  width: 25%;
+  margin: auto; 
+  text-align: top;
+  margin-top: -30px; 
+}
+.column2{
+  margin: auto;
+  margin-top: -10px;
+  float: left;
+  width: 70%;
+  text-align: center;
+
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+p{
+  font-size: 25px;
+}
+
+button {
+  transition-duration: 0.4s;
+  font-size: 17px;
+  color: rgb(248, 248, 248);
+  background-color: #f4511e;
+}
+
+button:hover {
+  background-color: #77aaf7; /* Green */
+  color: white;
+}
+
+.text1{
+  font-family: 'Baloo Tamma', cursive;
+  font-weight: bolder;
+}
+
+.head1{
+  font-family: Tahoma, sans-serif;
+}
